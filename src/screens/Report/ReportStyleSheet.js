@@ -1,0 +1,282 @@
+import { StyleSheet } from "react-native";
+
+export default StyleSheet.create({
+  container: {
+    flexGrow: 1,
+    padding: 20,
+    backgroundColor: "#f5f5f5",
+    marginTop: 40,
+  },
+  title: {
+    fontSize: 26,
+    fontWeight: "bold",
+    textAlign: "center",
+    marginBottom: 20,
+    color: "#333",
+  },
+  input: {
+    backgroundColor: "#fff",
+    padding: 10,
+    borderRadius: 8,
+    marginVertical: 5,
+    borderWidth: 1,
+    borderColor: "#ddd",
+  },
+  textArea: {
+    height: 100,
+    textAlignVertical: "top",
+  },
+  map: {
+    height: 200,
+    marginVertical: 10,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: "#ddd",
+    overflow: "hidden",
+  },
+  image: {
+    width: 100,
+    height: 100,
+    marginRight: 10,
+    borderRadius: 8,
+    marginTop: 10,
+    borderWidth: 1,
+    borderColor: "#ddd",
+  },
+  // Evidence specific styles
+  evidenceContainer: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+  },
+  evidenceItem: {
+    position: "relative",
+    margin: 5,
+  },
+  evidenceImage: {
+    width: 100,
+    height: 100,
+    borderRadius: 10,
+  },
+  deleteButton: {
+    position: "absolute",
+    top: 5,
+    right: 5,
+    backgroundColor: "rgba(0, 0, 0, 0.5)", // Black transparent
+    borderRadius: 10,
+    padding: 5,
+    zIndex: 10,
+  },
+  deleteButtonText: {
+    color: "white",
+    fontWeight: "bold",
+    fontSize: 14,
+  },
+  // Dropdown styles
+  dropdownButton: {
+    backgroundColor: "#fff",
+    padding: 12,
+    borderRadius: 8,
+    marginVertical: 5,
+    borderWidth: 1,
+    borderColor: "#ddd",
+    elevation: 1,
+  },
+  dropdownButtonText: {
+    textAlign: "center",
+    color: "#333",
+  },
+  dropdownList: {
+    backgroundColor: "#fff",
+    borderRadius: 8,
+    marginTop: -3,
+    marginBottom: 8,
+    borderWidth: 1,
+    borderColor: "#ddd",
+    zIndex: 1000,
+    elevation: 2,
+  },
+  dropdownItem: {
+    padding: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: "#f0f0f0",
+  },
+  dropdownItemText: {
+    color: "#333",
+    textAlign: "center",
+  },
+  // Main buttons styles
+  mainButton: {
+    backgroundColor: "#4a90e2",
+    padding: 12,
+    borderRadius: 8,
+    marginVertical: 10,
+    elevation: 2,
+  },
+  mainButtonText: {
+    color: "#fff",
+    textAlign: "center",
+    fontWeight: "bold",
+    fontSize: 16,
+  },
+  // Media buttons container
+  mediaButtonsContainer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginVertical: 10,
+  },
+  mediaButton: {
+    flex: 1,
+    padding: 12,
+    borderRadius: 8,
+    elevation: 2,
+    marginHorizontal: 5,
+  },
+  cameraButton: {
+    backgroundColor: "#3498db",
+  },
+  galleryButton: {
+    backgroundColor: "#9b59b6",
+  },
+  mediaButtonText: {
+    color: "#fff",
+    textAlign: "center",
+    fontWeight: "bold",
+  },
+  // Submit button
+  submitButton: {
+    backgroundColor: "#00BFFF",
+    padding: 15,
+    borderRadius: 8,
+    marginVertical: 20,
+    elevation: 3,
+  },
+  submitButtonText: {
+    color: "#fff",
+    textAlign: "center",
+    fontWeight: "bold",
+    fontSize: 18,
+  },
+  anonymousContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    marginVertical: 10,
+    backgroundColor: "#fff",
+    padding: 10,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: "#ddd",
+  },
+  label: {
+    fontSize: 16,
+    fontWeight: "bold",
+    marginVertical: 5,
+    color: "#444",
+  },
+  // Modal styles
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  // Success Modal
+  successModal: {
+    width: "80%",
+    backgroundColor: "#fff",
+    borderRadius: 15,
+    padding: 25,
+    alignItems: "center",
+    elevation: 5,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+  },
+  checkmarkContainer: {
+    marginBottom: 20,
+  },
+  checkCircle: {
+    width: 80,
+    height: 80,
+    borderRadius: 40,
+    backgroundColor: "#4CD964",
+    justifyContent: "center",
+    alignItems: "center",
+    borderWidth: 2,
+    borderColor: "#3CC24F",
+  },
+  checkmark: {
+    color: "white",
+    fontSize: 50,
+    fontWeight: "bold",
+  },
+  successTitle: {
+    fontSize: 22,
+    fontWeight: "bold",
+    color: "#333",
+    marginBottom: 10,
+  },
+  successMessage: {
+    fontSize: 16,
+    color: "#555",
+    textAlign: "center",
+    lineHeight: 22,
+  },
+  // Error Modal
+  errorModal: {
+    width: "80%",
+    backgroundColor: "#fff",
+    borderRadius: 15,
+    padding: 25,
+    alignItems: "center",
+    elevation: 5,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+  },
+  errorIconContainer: {
+    marginBottom: 20,
+  },
+  errorCircle: {
+    width: 80,
+    height: 80,
+    borderRadius: 40,
+    backgroundColor: "#FF3B30",
+    justifyContent: "center",
+    alignItems: "center",
+    borderWidth: 2,
+    borderColor: "#E0352B",
+  },
+  errorIcon: {
+    color: "white",
+    fontSize: 44,
+    fontWeight: "bold",
+  },
+  errorTitle: {
+    fontSize: 22,
+    fontWeight: "bold",
+    color: "#333",
+    marginBottom: 10,
+  },
+  errorMessage: {
+    fontSize: 16,
+    color: "#555",
+    textAlign: "center",
+    lineHeight: 22,
+    marginBottom: 15,
+  },
+  errorButton: {
+    backgroundColor: "#FF3B30",
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 8,
+    marginTop: 5,
+  },
+  errorButtonText: {
+    color: "#fff",
+    fontSize: 16,
+    fontWeight: "bold",
+  },
+});
